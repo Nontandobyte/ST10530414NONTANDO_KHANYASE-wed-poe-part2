@@ -114,3 +114,25 @@ Email: hello@sweetlips.co.za | WhatsApp: 067 144 8554
 ## License
 
 &copy; 2026 Sweet Lips. All rights reserved.
+## Changelog
+
+### Part 2 Updates
+- Added a shared stylesheet (`css/style.css`) and linked it from every page, giving the site consistent colours, fonts, and layout
+- Added page-specific styling classes (`.cart-page`, `.faq-page`, `.contact-page`, `.reviews-page`, `.social-page`) for unique accent colours per page
+- Expanded `products.html` with shade/flavour selectors, three lip-care packages, and a limited-edition collection section
+- Enabled GitHub Pages so the site is publicly viewable via a live link
+
+### Fixes from Part 1 Feedback
+- Fixed missing space in `<link rel="stylesheet" href="...">` across 7 pages, which could prevent the stylesheet from loading correctly in some browsers
+- Added the missing `viewport` meta tag to 7 pages for proper mobile responsiveness
+- Fixed a broken navigation link on the homepage (`product.html` → `products.html`) that caused a 404 error
+- Fixed a malformed `<div class="product-card">` around the Lip Scrubs product that was closing itself immediately and breaking the card layout
+- Fixed a typo (`<br.` → `<br>`) and missing space in the Lip Scrubs product heading
+- Restructured `index.html`: wrapped the page title and navigation in a proper `<header>` tag, removed the deprecated `<center>` element, moved the `<footer>` inside `<body>` (it was previously outside the closing tag), and added the missing `</html>` closing tag
+- Moved `style.css` into a `css/` folder to match the path already referenced in the HTML files, fixing a mismatch that caused the site to load with no styling
+- ## References
+
+- Google Fonts — Poppins typeface: https://fonts.google.com/specimen/Poppins
+- Product images generated using Meta AI
+- Claude (Anthropic) — used for code review, debugging assistance, and identifying HTML/CSS issues
+- 
